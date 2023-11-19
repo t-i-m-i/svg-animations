@@ -1,0 +1,46 @@
+.stroke {
+    stroke: tomato;
+    stroke-dasharray: 1 100;
+    animation: stroke1 2s infinite;
+    stroke-width: 1;
+  }
+  
+  @keyframes stroke1 {
+    0% {
+      stroke-dasharray: 1 100;
+    }
+    100% {
+      stroke-dasharray: 100 100;
+    }
+  } 
+  
+  .middle {
+    animation: middle 3s infinite;
+    transform-origin: center center;
+  }
+  
+  @keyframes middle {
+    0% {
+      transform: rotate(0);
+    }
+    100%
+    {
+      transform: rotate(180deg);
+    }
+  }
+  
+  .bottom {
+    animation: middle 3s infinite;
+    transform-origin: center center;
+    /* animation-delay: 3s; */
+  }
+  
+  @keyframes bottom {
+    0% {
+      transform: rotate(0);
+    }
+    100%
+    {
+      transform: rotate(-180deg);
+    }
+  }
